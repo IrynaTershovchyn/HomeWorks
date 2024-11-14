@@ -21,6 +21,7 @@ function checkProbabilityTheory(count) {
             oddNumber +=1;
         }
     }
+        
     let evenPercent = Math.round(100/rndArray.length * evenNumber);
     let oddPercent = Math.round(100 - evenPercent);
     console.log ("Кількість парних чисел: " + evenNumber);
