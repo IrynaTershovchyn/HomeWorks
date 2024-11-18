@@ -2,14 +2,14 @@ var chihuahua = {
     name: "Ponchick",
     weight: 2.5,
     favoriteToy: "racoon",
+    getInfo: function () {
+        for (var key in this) {
+            if (typeof this[key] != "function")
+            console.log(key + ": " + this[key]);
+        };
+    }
 };
 
-var x = chihuahua;
-function getInfo() {
-    for (var key in x) {
-        console.log(key + ": " + x[key]);
-    };
-};
 
-// chihuahua.tail = "fluffy";
-getInfo();
+//chihuahua.tail = "fluffy";
+chihuahua.getInfo();
